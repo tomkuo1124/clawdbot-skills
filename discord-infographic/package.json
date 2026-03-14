@@ -1,0 +1,12 @@
+{
+  "name": "discord-infographic",
+  "version": "1.0.0",
+  "description": "Generate infographic from Discord conversation using Gemini AI",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0"
+  }
+}
