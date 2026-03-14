@@ -6,7 +6,9 @@ Shared skills for [Clawdbot](https://github.com/clawdbot/clawdbot) AI agent auto
 
 | Skill | Description |
 |-------|-------------|
+| [browser-relay](./browser-relay/) | Control Chrome browser via Browser Relay extension |
 | [claude-code-orchestrator](./claude-code-orchestrator/) | Orchestrate Claude Code for coding tasks via sub-agents |
+| [youtube-summary-skill](./youtube-summary-skill.zip) | Summarize YouTube videos (download and extract) |
 
 ## 🚀 How to Use
 
@@ -24,6 +26,7 @@ git clone https://github.com/tomkuo1124/clawdbot-skills.git
 git clone https://github.com/tomkuo1124/clawdbot-skills.git
 
 # Copy the skill you need
+cp -r clawdbot-skills/browser-relay ~/clawd/skills/
 cp -r clawdbot-skills/claude-code-orchestrator ~/clawd/skills/
 ```
 
@@ -39,12 +42,16 @@ git submodule add https://github.com/tomkuo1124/clawdbot-skills.git skills/share
 ```
 clawdbot-skills/
 ├── README.md
-├── claude-code-orchestrator/
-│   ├── SKILL.md              # Main skill instructions
+├── browser-relay/
+│   ├── SKILL.md              # Decision tree + operations
 │   └── references/
-│       ├── prompts.md        # Task-specific prompt templates
-│       └── examples.md       # Complete usage examples
-└── (more skills...)
+│       └── examples.md       # Workflow examples
+├── claude-code-orchestrator/
+│   ├── SKILL.md              # Orchestration protocol
+│   └── references/
+│       ├── prompts.md        # Task templates
+│       └── examples.md       # Usage examples
+└── youtube-summary-skill.zip # YouTube summarization
 ```
 
 ## 🤝 Contributing
